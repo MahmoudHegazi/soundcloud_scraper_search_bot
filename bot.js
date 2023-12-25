@@ -1,4 +1,5 @@
 const bot = {
+    limit: 0,
     stop: false,
     timeout: null,
     currentScoll: 0,
@@ -66,8 +67,10 @@ const bot = {
     },
     getPageSongs: function() {
         const songs = [];
+        const newLimit = bot.limit + 5;
         // that consider scraper with performance or bot tester run on server
-        const songElms = document.querySelectorAll(".lazyLoadingList__list.sc-list-nostyle.sc-clearfix li.searchList__item");
+        const songElms = Array.from(document.querySelectorAll(".lazyLoadingList__list.sc-list-nostyle.sc-clearfix li.searchList__item")).slice(bot.limit, newLimit);
+        bot.limit = newLimit;
 
         const pageOrigin = window.location.origin;
         if (!pageOrigin) {
@@ -116,7 +119,7 @@ const bot = {
             if (imgElm && imgElm.style.backgroundImage) {
                 const imageUrl = bot.getUrlFromBGU(imgElm.style.backgroundImage);
                 if (imageUrl) {
-                    song['image'] = pageOrigin + imageUrl.trim();
+                    song['image'] = imageUrl.trim();
                 } else {
                     console.log("here", imageUrl, "\n", imgElm.style.backgroundImage);
                 }
