@@ -46,7 +46,7 @@ function getPageSongs() {
                 if (titleElm && titleElm.innerText) {
                     song['title'] = titleElm.innerText;
                 }
-                song['url'] = songUrl.trim();
+                song['url'] = pageOrigin + songUrl.trim();
                 urls.push(songUrl);
             } else {
                 uniqueSong = false;
@@ -67,7 +67,7 @@ function getPageSongs() {
         if (imgElm && imgElm.style.backgroundImage) {
             const imageUrl = getUrlFromBGU(imgElm.style.backgroundImage);
             if (imageUrl) {
-                song['image'] = pageOrigin + imageUrl.trim();
+                song['image'] = imageUrl.trim();
             } else {
                 console.log("here", imageUrl, "\n", imgElm.style.backgroundImage);
             }
