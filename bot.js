@@ -68,7 +68,7 @@ const bot = {
     getPageSongs: function() {
         const songs = [];
         const newLimit = bot.limit + 5;
-        // that consider scraper with performance or bot tester run on server
+        // that consider scraper with performance or bot tester run on server (require new timewait before start scrape while this already scrape then scroll means scrap old but ok
         const songElms = Array.from(document.querySelectorAll(".lazyLoadingList__list.sc-list-nostyle.sc-clearfix li.searchList__item")).slice(bot.limit, newLimit);
         bot.limit = newLimit;
 
