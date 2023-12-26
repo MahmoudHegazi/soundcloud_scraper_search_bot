@@ -35,7 +35,9 @@ function getPageSongs() {
             image: '',
             url: '',
             username: '',
-            userUrl: ''
+            userUrl: '',
+            origin: pageOrigin,
+            searchUrl: window.location.href
         };
         let uniqueSong = true;
         const urlElm = songElm.querySelector("div.sound__content a.soundTitle__title");
@@ -72,7 +74,9 @@ function getPageSongs() {
                 console.log("here", imageUrl, "\n", imgElm.style.backgroundImage);
             }
         }
-        songs.push(song);
+        if (song.url) {
+            songs.push(song);
+        }
     }
     return songs;
 }
