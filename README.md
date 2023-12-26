@@ -30,3 +30,6 @@ also you have options for random int min and max in seconds example at least get
 also bot desgined in way more aggrisve so it will get the data by meaning `get what can get fast`, if they stopped bot using anyway the property bot.data will let you get last data stoped at or when unexcpted action occured in other words this always returns data as unusal action start late, also you can save data direct in localstorage instead of bot.data and also if u keep app like that save the urls list as well in localstorage so not repeat songs
 
 ![image](https://github.com/MahmoudHegazi/soundcloud_scraper_search_bot/assets/55125302/71aac1d2-7db8-4835-a2e9-ccc75a0301e7)
+
+
+### if need make it more accurate and get all data just scroll manual or with mouse auto scroll to end of page by leaving pc a while and one call to function getPageData from file scraper_function.js all you will get all data
