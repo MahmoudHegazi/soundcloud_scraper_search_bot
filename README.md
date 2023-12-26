@@ -1,5 +1,8 @@
 # soundcloud_scraper_search_bot
 
+# stable version right now
+bot.js
+
 !note url is prop of global bot object so it getting only unique songs from search result, if you need return exact same soundcloud returns in search page bot runs on it (repeat songs), just move urls from bot and add it within getPageSongs
 
 ```javascript
