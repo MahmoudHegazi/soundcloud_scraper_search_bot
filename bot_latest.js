@@ -77,10 +77,8 @@ const bot = {
     },
     getPageSongs: function() {
         const songs = [];
-        const newLimit = bot.limit + 5;
         // that consider scraper with performance or bot tester run on server
         const songElms = Array.from(document.querySelectorAll(".lazyLoadingList__list.sc-list-nostyle.sc-clearfix li.searchList__item"));
-        bot.limit = newLimit;
 
         const pageOrigin = window.location.origin;
         if (!pageOrigin) {
@@ -109,7 +107,7 @@ const bot = {
                     if (titleElm && titleElm.innerText) {
                         song['title'] = titleElm.innerText;
                     }
-                    song['url'] = pageOrigin + songUrl.trim();
+                    song['url'] = songUrl.trim();
                     bot.urls.push(songUrl);
                 } else {
                     // recap on old images
