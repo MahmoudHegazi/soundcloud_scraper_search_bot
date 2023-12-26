@@ -79,7 +79,7 @@ const bot = {
         const songs = [];
         const newLimit = bot.limit + 5;
         // that consider scraper with performance or bot tester run on server
-        const songElms = Array.from(document.querySelectorAll(".lazyLoadingList__list.sc-list-nostyle.sc-clearfix li.searchList__item")).slice(0, newLimit);
+        const songElms = Array.from(document.querySelectorAll(".lazyLoadingList__list.sc-list-nostyle.sc-clearfix li.searchList__item"));
         bot.limit = newLimit;
 
         const pageOrigin = window.location.origin;
@@ -115,7 +115,7 @@ const bot = {
                     // recap on old images
                     const oldObjI = bot.getObjIndexByUrl(songUrl);
                     const oldObj = (oldObjI != -1) ? bot.data[oldObjI] : null;
-                    if (!oldObj.image){
+                    if (oldObj && !oldObj.image){
                        bot.data.splice(oldObjI, 1);
                     } else {
                        uniqueSong = false;
