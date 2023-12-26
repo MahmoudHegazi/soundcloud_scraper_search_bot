@@ -1,6 +1,6 @@
 # soundcloud_scraper_search_bot
 
-this bot for CV,portfolio only, if you coder you must not use any of the attached scripts for scrape soundcloud.
+This bot is for resume and portfolio (test bot first and then scraping bot) If you are a programmer, you should not use any of the attached scripts for the scraping process.
 
 # stable version right now
 scraper_function.js (manual scroll) get all data
