@@ -32,4 +32,5 @@ also bot desgined in way more aggrisve so it will get the data by meaning `get w
 ![image](https://github.com/MahmoudHegazi/soundcloud_scraper_search_bot/assets/55125302/71aac1d2-7db8-4835-a2e9-ccc75a0301e7)
 
 
-### if need make it more accurate and get all data just scroll manual or with mouse auto scroll to end of page by leaving pc a while and one call to function getPageData from file scraper_function.js all you will get all data
+### info 
+if need make it more accurate and get all data just scroll manual or with mouse auto scroll to end of page by leaving pc a while and one call to function getPageData from file scraper_function.js all you will get all data as image take time to load
