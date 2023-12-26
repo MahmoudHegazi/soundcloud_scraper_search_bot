@@ -1,5 +1,7 @@
 # soundcloud_scraper_search_bot
 
+this bot for CV,portfolio only, if you coder you must not use any of the attached scripts for scrape soundcloud.
+
 # stable version right now
 scraper_function.js (manual scroll) get all data
 bot.js (not load all images)
