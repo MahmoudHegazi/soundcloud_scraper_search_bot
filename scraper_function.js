@@ -46,7 +46,7 @@ function getPageSongs() {
                 if (titleElm && titleElm.innerText) {
                     song['title'] = titleElm.innerText;
                 }
-                song['url'] = pageOrigin + songUrl.trim();
+                song['url'] = songUrl.trim();
                 urls.push(songUrl);
             } else {
                 uniqueSong = false;
